@@ -34,4 +34,8 @@ export class AuthService {
     this.userValid = false;
     this.router.navigate(['login']);
   }
+
+  isUserValid(){
+    return this.userValid;
+  }
 }
