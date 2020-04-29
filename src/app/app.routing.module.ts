@@ -9,7 +9,7 @@ const appRoutes: Routes = [
     { path: 'alunos', loadChildren: () => import('./alunos/alunos.module').then(m => m.AlunosModule)},
     { path: 'login', component: LoginComponent },
     { path: 'home', component: HomeComponent },
-    { path: '', component: HomeComponent }
+    { path: '', component: LoginComponent }
 ];
 
 @NgModule({
